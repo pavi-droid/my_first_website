@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fffaf0;
+  color: #333;
+  line-height: 1.6;
+}
+
+header.hero {
+  background-image: url('https://images.unsplash.com/photo-1601758123927-196dcb82d1c4?auto=format&fit=crop&w=1500&q=80');
+  background-size: cover;
+  background-position: center;
+  padding: 80px 20px;
+  color: white;
+  text-align: center;
+}
+
+header.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.gallery {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.image-grid img {
+  width: 100%;
+  border-radius: 10px;
+  border: 2px solid #ccc;
+  transition: transform 0.3s ease;
+}
+
+.image-grid img:hover {
+  transform: scale(1.05);
+}
+
+.form-section {
+  padding: 40px 20px;
+  background-color: #fce4ec;
+  text-align: center;
+}
+
+form {
+  margin-top: 20px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  width: 250px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #ff6f61;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #e65c50;
+}
+
+footer {
+  padding: 20px;
+  background-color: #eee;
+  text-align: center;
+  font-size: 0.9rem;
+}
